@@ -1,6 +1,8 @@
 name: Deep Learning Dry Run
 
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   dry-run:

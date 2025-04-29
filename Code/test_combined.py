@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # Load trained model
-model = YOLO("runs/detect/combined_detector_final_fresh3/weights/best.pt")
+model = YOLO("runs/detect/combined_detector_final_fresh4/weights/best.pt")
 
 # Path to your input video
 input_video_path = "combined_videos.mp4"  
