@@ -1,0 +1,26 @@
+# Folders
+00000lightsaber_dalek_people_dataset/
+all_lightsabers_yolo_labels/
+annotations/
+coco_clean_split/
+coco_subset_split/
+coco_subset_yolo/
+dalek_dataset/
+dalek_split/
+datasets/
+lightsaber_dalek_dataset/
+lightsaber_dalek_people_dataset/
+lightsaber_dataset/
+merged_lightsabers/
+other_lightsabers/
+runs/
+sith_lightsabers/
+sith_split/
+val2017/
+
+# Files
+*.txt
+*.mp4
+*.jpg
+*.png
+*.pt

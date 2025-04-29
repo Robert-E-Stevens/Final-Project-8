@@ -1,0 +1,15 @@
+# data.yaml for YOLOv8 training
+# 6 total classes: person, dog, cat, dalek, other_lightsaber, sith_lightsaber
+
+path: C:\Users\Subsi\Documents\ECEN\ECEN_5060-DeepLearning\FinalProject\FinalProject\Final-Project-8\Code\lightsaber_dalek_people_dataset
+
+train: train/images
+val: val/images
+
+names:
+  0: person
+  1: dog
+  2: cat
+  3: dalek
+  4: other_lightsaber
+  5: sith_lightsaber
