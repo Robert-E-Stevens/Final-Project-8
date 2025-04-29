@@ -24,12 +24,12 @@ jobs:
           pip install ultralytics
           pip install -r requirements.txt || echo "No requirements.txt found, skipping."
 
-      - name: Dry Run: Training Script
+      - name: "Dry Run: Inference Script"
         run: |
           echo "Running dry run of train_combined.py..."
           python train_combined.py || echo "Warning: train_combined.py failed (probably missing dataset)."
 
-      - name: Dry Run: Inference Script
+      - name: "Dry Run: Inference Script"
         run: |
           echo "Running dry run of predict_combined.py..."
           python predict_combined.py --source combined_videos.mp4 --weights runs/detect/combined_detector_final_fresh4/weights/best.pt || echo "Warning: predict_combined.py failed (probably missing video or model)."
