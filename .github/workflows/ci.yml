@@ -1,18 +1,18 @@
-name: Deep Learning Dry Run
+name: Deep Learning CI/CD Dry Run
 
 on:
   push:
   workflow_dispatch:
 
 jobs:
-  dry-run:
+  dry-run-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -24,7 +24,12 @@ jobs:
           pip install ultralytics
           pip install -r requirements.txt || echo "No requirements.txt found, skipping."
 
-      - name: Dry Run Train Script
+      - name: Dry Run: Training Script
         run: |
-          echo "Checking if train_combined.py runs without dataset..."
-          python train_combined.py || echo "Warning: Training failed (probably missing dataset)."
+          echo "Running dry run of train_combined.py..."
+          python train_combined.py || echo "Warning: train_combined.py failed (probably missing dataset)."
+
+      - name: Dry Run: Inference Script
+        run: |
+          echo "Running dry run of predict_combined.py..."
+          python predict_combined.py --source combined_videos.mp4 --weights runs/detect/combined_detector_final_fresh4/weights/best.pt || echo "Warning: predict_combined.py failed (probably missing video or model)."

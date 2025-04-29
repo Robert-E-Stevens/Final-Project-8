@@ -3,7 +3,7 @@ import numpy as np
 from ultralytics import YOLO
 
 # Load the model
-model = YOLO("runs/detect/combined_detector_final_fresh/weights/best.pt")
+model = YOLO("runs/detect/combined_detector_final_fresh4/weights/best.pt")
 
 # Open the video
 cap = cv2.VideoCapture("combined_videos.mp4")
@@ -31,7 +31,7 @@ while cap.isOpened():
             break
 
         # Run inference
-        results = model(frame, imgsz=640, conf=0.3, iou=0.3, vid_stride=5)
+        results = model(frame, imgsz=640, conf=0.3, iou=0.3, vid_stride=3)
         boxes = results[0].boxes
         class_ids = boxes.cls.cpu().numpy().astype(int)
         confidences = boxes.conf.cpu().numpy()

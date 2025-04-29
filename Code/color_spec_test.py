@@ -38,7 +38,7 @@ def main():
     fps = cap.get(cv2.CAP_PROP_FPS) or 30  # Default to 30 if FPS not readable
 
     # Output writer
-    out = cv2.VideoWriter('sith_fight_color.mp4',
+    out = cv2.VideoWriter('combined_output.mp4',
                           cv2.VideoWriter_fourcc(*'mp4v'),
                           fps,
                           (width, height))
