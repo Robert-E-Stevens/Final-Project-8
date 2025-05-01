@@ -1,5 +1,7 @@
 # Deep Learning Object Detection Project
 
+#pydocs at: https://robert-e-stevens.github.io/Final-Project-8/
+
 ## Overview
 This project uses a deep learning object detection model to detect and classify:
 - People
