@@ -17,7 +17,7 @@ else:
     exit(1)
 
 # Open the video
-cap = cv2.VideoCapture("combined_videos2.mp4")
+cap = cv2.VideoCapture("videos/combined_videos.mp4")
 cv2.namedWindow("YOLOv8 Filtered Inference", cv2.WINDOW_NORMAL)
 
 # Playback settings
@@ -42,7 +42,7 @@ while cap.isOpened():
             break
 
         # Run inference
-        results = model(frame, imgsz=640, conf=0.3, iou=0.3, vid_stride=3)
+        results = model(frame, imgsz=640, conf=0.3, iou=0.3, vid_stride=1)
         boxes = results[0].boxes
         class_ids = boxes.cls.cpu().numpy().astype(int)
         confidences = boxes.conf.cpu().numpy()

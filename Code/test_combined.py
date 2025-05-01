@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO("combined_detector_final_fresh4/weights/best.pt")
 
 # Path to your input video
-input_video_path = "combined_videos.mp4"  
+input_video_path = "videos/combined_videos.mp4"  
 #output_video_path = "test_.mp4"  
 
 # Run prediction on video
