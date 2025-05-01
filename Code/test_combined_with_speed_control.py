@@ -3,7 +3,7 @@ import numpy as np
 from ultralytics import YOLO
 
 # Load the model
-model = YOLO("runs/detect/combined_detector_final_fresh4/weights/best.pt")
+model = YOLO("combined_detector_final_fresh4/weights/best.pt")
 
 # Open the video
 cap = cv2.VideoCapture("combined_videos2.mp4")
