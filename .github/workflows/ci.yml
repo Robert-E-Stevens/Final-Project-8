@@ -31,5 +31,5 @@ jobs:
 
       - name: "Dry Run: Inference Script"
         run: |
-          echo "Running dry run of Code/predict_combined.py..."
-          python Code/predict_combined.py --source combined_videos.mp4 --weights Code/combined_detector_final_fresh4/weights/best.pt || echo "Warning: predict_combined.py failed (probably missing video or model)."
+          echo "Running dry run of Code/test_combined_with_speed_control.py..."
+          python Code/test_combined_with_speed_control.py --source combined_videos2.mp4 --weights Code/combined_detector_final_fresh4/weights/best.pt || echo "Warning: predict_combined.py failed (probably missing video or model)."
