@@ -17,10 +17,11 @@ runs/
 sith_lightsabers/
 sith_split/
 val2017/
+archive/
+other_split/
 
 # Files
-*.txt
 *.mp4
 *.jpg
 *.png
-*.pt
+*.pyc

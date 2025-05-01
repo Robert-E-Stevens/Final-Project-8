@@ -1,0 +1,13 @@
+Ultralytics 8.3.118  Python-3.11.1 torch-2.6.0+cu118 CUDA:0 (NVIDIA GeForce RTX 3060 Laptop GPU, 6144MiB)
+Model summary (fused): 72 layers, 11,127,906 parameters, 0 gradients, 28.4 GFLOPs
+[34m[1mval: [0mFast image access  (ping: 0.00.0 ms, read: 398.6262.6 MB/s, size: 185.7 KB)
+                   all        707       2291      0.559      0.727      0.598      0.421
+                person        542       2027      0.683      0.658      0.704      0.464
+                   dog         35         40      0.521        0.6      0.604      0.378
+                   cat         37         44      0.562      0.523      0.579      0.438
+                 dalek         27         61      0.816      0.918       0.96      0.737
+      other_lightsaber         35         50      0.324       0.86      0.311      0.224
+       sith_lightsaber         39         69      0.446      0.806      0.429      0.287
+Speed: 0.2ms preprocess, 4.6ms inference, 0.0ms loss, 0.7ms postprocess per image
+Results saved to [1mruns\detect\val2[0m
+ Learn more at https://docs.ultralytics.com/modes/val

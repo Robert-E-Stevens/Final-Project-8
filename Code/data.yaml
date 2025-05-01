@@ -1,7 +1,0 @@
-path: dalek_dataset_split
-
-train: images/train
-val: images/val
-
-names:
-  0: dalek

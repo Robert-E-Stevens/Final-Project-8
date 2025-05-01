@@ -1,8 +1,0 @@
-path: C:/Users/Subsi/Documents/ECEN/ECEN_5060-DeepLearning/FinalProject/FinalProject/Final-Project-8/Code/lightsaber_dataset
-
-train: images/train
-val: images/val
-
-names:
-  0: sith lightsaber
-  1: other lightsaber
