@@ -27,7 +27,7 @@ jobs:
       - name: "Dry Run: Inference Script"
         run: |
           echo "Running dry run of Code/train_combined.py..."
-          python train_combined.py || echo "Warning: train_combined.py failed (probably missing dataset)."
+          python Code/train_combined.py || echo "Warning: train_combined.py failed (probably missing dataset)."
 
       - name: "Dry Run: Inference Script"
         run: |
