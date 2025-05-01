@@ -1,9 +1,20 @@
 import cv2
+import os
 import numpy as np
 from ultralytics import YOLO
 
 # Load the model
-model = YOLO("combined_detector_final_fresh4/weights/best.pt")
+# Try both local and GitHub Actions path
+local_path = "combined_detector_final_fresh4/weights/best.pt"
+ci_path = "Code/combined_detector_final_fresh4/weights/best.pt"
+
+if os.path.exists(local_path):
+    model = YOLO(local_path)
+elif os.path.exists(ci_path):
+    model = YOLO(ci_path)
+else:
+    print("❌ Model file not found in either local or CI path.")
+    exit(1)
 
 # Open the video
 cap = cv2.VideoCapture("combined_videos2.mp4")
