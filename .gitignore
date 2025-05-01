@@ -19,9 +19,9 @@ sith_split/
 val2017/
 archive/
 other_split/
+videos/
 
 # Files
-*.mp4
 *.jpg
 *.png
 *.pyc

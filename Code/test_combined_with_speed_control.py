@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model = YOLO("runs/detect/combined_detector_final_fresh4/weights/best.pt")
 
 # Open the video
-cap = cv2.VideoCapture("combined_videos.mp4")
+cap = cv2.VideoCapture("combined_videos2.mp4")
 cv2.namedWindow("YOLOv8 Filtered Inference", cv2.WINDOW_NORMAL)
 
 # Playback settings
