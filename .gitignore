@@ -22,6 +22,4 @@ other_split/
 videos/
 
 # Files
-*.jpg
-*.png
 *.pyc
